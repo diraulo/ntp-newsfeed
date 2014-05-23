@@ -27,7 +27,7 @@ app.config(function($routeProvider) {
             templateUrl: 'views/news.html',
             controller: 'NewsController'
         })
-        .otherwise({
-            redirectTo: '/'
-        });
+        // .otherwise({
+        //     redirectTo: '/'
+        // });
 });

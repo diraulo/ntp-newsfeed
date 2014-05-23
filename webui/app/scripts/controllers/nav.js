@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('NavbarController', function ($scope, $location, Post,Auth) {
+app.controller('NavbarController', function ($scope, $location, Auth) {
     $scope.post = {url: 'http://', title: ''};
 
     // $scope.submitPost = function () {
@@ -10,6 +10,7 @@ app.controller('NavbarController', function ($scope, $location, Post,Auth) {
     //   });
     // };
     $scope.logout = function () {
+      console.log ("LOGOUT BTN","BTN");
       Auth.logout();
     };
 
