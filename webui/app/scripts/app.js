@@ -5,9 +5,16 @@ var app = angular.module('ntpNewsfeedApp', [
    'ngResource',
    'ngSanitize',
    'ngRoute',
-   'firebase'
+   'firebase',
+   'angular-loading-bar',
+   'ngAnimate'
 ])
 .constant('FIREBASE_URL', 'https://torid-fire-4837.firebaseio.com/');
+
+app.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+   cfpLoadingBarProvider.includeSpinner = true;
+   cfpLoadingBarProvider.includeBar = true;
+}])
 
 app.config(function($routeProvider) {
     $routeProvider
