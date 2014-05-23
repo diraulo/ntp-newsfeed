@@ -18,6 +18,10 @@ app.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
 
 app.config(function($routeProvider) {
     $routeProvider
+        .when('/', {
+            templateUrl: 'views/main.html',
+            controller: 'MainCtrl'
+        })
        .when('/login', {
          templateUrl: 'views/login.html',
          controller: 'AuthCtrl'
@@ -26,10 +30,6 @@ app.config(function($routeProvider) {
          templateUrl: 'views/register.html',
          controller: 'AuthCtrl'
        })
-        .when('/main', {
-            templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
-        })
         .when('/news', {
             templateUrl: 'views/news.html',
             controller: 'NewsController'
