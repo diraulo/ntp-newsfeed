@@ -11,6 +11,14 @@ var app = angular.module('ntpNewsfeedApp', [
 
 app.config(function($routeProvider) {
     $routeProvider
+       .when('/login', {
+         templateUrl: 'views/login.html',
+         controller: 'AuthCtrl'
+       })
+       .when('/register', {
+         templateUrl: 'views/register.html',
+         controller: 'AuthCtrl'
+       })
         .when('/main', {
             templateUrl: 'views/main.html',
             controller: 'MainCtrl'
