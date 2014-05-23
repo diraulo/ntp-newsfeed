@@ -1,11 +1,13 @@
 'use strict';
 
 var app = angular.module('ntpNewsfeedApp', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngRoute'
-]);
+   'ngCookies',
+   'ngResource',
+   'ngSanitize',
+   'ngRoute',
+   'firebase'
+])
+.constant('FIREBASE_URL', 'https://torid-fire-4837.firebaseio.com/');
 
 app.config(function($routeProvider) {
     $routeProvider
