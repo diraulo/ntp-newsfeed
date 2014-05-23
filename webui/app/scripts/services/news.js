@@ -7,14 +7,14 @@ app.factory('News',
 
         var News = {
             all: news,
-            create: function (news) {
-              return news_posts.$add(news);
+            create: function (nws) {
+              return news_posts.$add(nws);
             },
             find: function (newsId) {
-              return news_posts.$child(newsId);
+              return news_posts.$child(nwsId);
             },
             delete: function (newsId) {
-              return news_posts.$remove(newsId);
+              return news_posts.$remove(nwsId);
             }
         };
 
