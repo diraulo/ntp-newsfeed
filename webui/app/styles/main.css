@@ -1,9 +1,85 @@
 body {
-  background: #F3F3F3;
+  /*background: #F3F3F3;*/
+  margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 }
 
-
+/* Top nav and header */
 /* NAV BAR */
+.newsfeed-nav {
+    border-color: #2c3e50;
+    background-color: #233140;
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+.newsfeed-nav .navbar-brand {
+    color: #fff;
+}
+
+.newsfeed-nav .navbar-nav > li > a,
+.masthead a {
+    color: #fff;
+}
+
+.newsfeed-nav .navbar-nav > li > a:hover,
+.newsfeed-nav .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #2c3e50;
+}
+
+.newsfeed-nav .navbar-nav > .active > a,
+.newsfeed-nav .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #2c3e50;
+}
+
+.newsfeed-nav .nav .open > a,
+.nav .open > a:hover,
+.newsfeed-nav .nav .open > a:focus {
+    color: #fff;
+    background-color: #2c3e50;
+}
+
+.newsfeed-nav .navbar-toggle {
+    border-color: #233140;
+}
+
+.newsfeed-nav .navbar-toggle:hover {
+    border-color: #233140;
+    background-color: #233140;
+}
+
+.newsfeed-nav .navbar-collapse {
+    border: none;
+}
+
+.newsfeed-nav .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.newsfeed-nav .nav .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.newsfeed-nav .nav .open > a,
+.nav .open > a:hover .caret,
+.newsfeed-nav .nav .open > a:focus .caret,
+.newsfeed-nav .nav .active .caret,
+.newsfeed-nav .nav a:hover .caret,
+.newsfeed-nav .nav a:focus .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.newsfeed-nav .dropdown-menu > li > a:hover,
+.newsfeed-nav .dropdown-menu > li > a:focus,
+.newsfeed-nav .dropdown-menu > .active > a,
+.newsfeed-nav .dropdown-menu > .active > a:hover,
+.newsfeed-nav .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #2c3e50;
+}
+
 .nav-pic {
   margin: -2px 5px 0 0;
   max-height: 20px;
