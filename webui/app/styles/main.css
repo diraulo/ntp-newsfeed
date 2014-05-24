@@ -1,6 +1,7 @@
 body {
-  /*background: #F3F3F3;*/
-  margin-top: 60px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+  background: #F3F3F3;
+  margin-top: 80px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+  margin-bottom: 50px;
 }
 
 /* Top nav and header */
