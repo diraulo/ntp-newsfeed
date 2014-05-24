@@ -2,10 +2,13 @@
   <h2>Log In</h2>
 
   <form ng-submit="login()">
-    <p ng-show="error" class="text-danger">{{ error }}</p>
     <input type="email" ng-model="user.email" placeholder="Email" class="form-control"><br>
     <input type="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
     <input type="submit" value="Log in" class="btn btn-primary" />
   </form>
 
+  <div ng-show="error" class="alert alert-danger alert-dismissable" style="margin-top:20px;">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Oups something went wrong!</strong> <br> {{ error }}
+  </div>
 </div>

@@ -15,15 +15,22 @@ app.controller('AuthCtrl',
       Auth.login($scope.user).then(function () {
         $location.path('/news');
       }, function (error) {
-        $scope.error = error.toString();
+        $scope.error = error.toString().replace('Error: FirebaseSimpleLogin: FirebaseSimpleLogin: ', '');
       });
     };
 
     $scope.register = function () {
-      Auth.register($scope.user).then(function (authUser) {
-        $location.path('/');
-      }, function (error) {
-        $scope.error = error.toString();
-      });
+      console.log(">>>> ");
+      console.log($scope.user);
+      if ($scope.user == undefined) {
+        $scope.error = "Please fill in all details";
+        console.log("Please fill in all details");
+      } else {
+        Auth.register($scope.user).then(function (authUser) {
+          $location.path('/');
+        }, function (error) {
+          $scope.error = error.toString().replace('Error: FirebaseSimpleLogin: FirebaseSimpleLogin: ', '');
+        });
+      }
     };
   });
